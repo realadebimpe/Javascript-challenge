@@ -26,11 +26,15 @@ function exerciseOne(){
     // 2nd chllenge
     //Write a function that takes an array of strings and return the longest string in the array.
 
-    const arr = ["Having", "fun", "with", "javascript"]
+    const myArrays = ["Having", "fun", "with", "javascript"]
     function longestString (arr) {
-      for (var i = 0; i <arr.length; i++){
-         
+      let string = arr[0];
+      for (i = 0; i <arr.length; i++){
+         if (arr[i].length > string.length) {
+           string = arr[i];
+         }
       }
-      return arr[3];
+      return string;
     }
-    console.log(myArr)
+    longestString(myArrays)
+    console.log(myArr);
